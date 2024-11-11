@@ -1,3 +1,26 @@
+:root {
+  --c0: #ffffff;
+  --c1: #F4F4F4;
+  --c2: #E0E0E0;
+  --c3: #CCCCCC;
+  --c4: #B8B8B8;
+  --c5: #A3A3A3;
+  --c6: #8F8F8F;
+  --c7: #7A7A7A;
+  --c8: #666666;
+  --c9: #525252;
+  --c10: #3D3D3D;
+  --c11: #292929;
+  --c12: #141414;
+  --c13: #000000;
+  --p1: #739FF8;
+  --p2: #4d74c2;
+  --p3: #2a4b8b;
+  --p4: #132d63;
+  --p5: #05173a;
+  --font1-s: 400 1rem/1.25 "Fira Sans", sans-serif;
+}
+
 body {
   font-family: "Fira Sans", Arial, sans-serif;
   margin: 0;
@@ -5,11 +28,7 @@ body {
   background-color: #292929;
 }
 
-h1,h2,h3, p {
-  margin: 0;
-}
-
-ul {
+h1,h2,h3, p, ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -19,6 +38,12 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
 }
 
 .subtitulo {

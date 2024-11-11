@@ -4,134 +4,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Telho - Desenvolvedor e UX/UI Designer</title>
-  <link rel="stylesheet" href="src/css/style.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
   <link rel="icon" href="src/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <meta name="description" content="Desenvolvedor Front End e UX/UI Designer localizado em Santa Catarina">
 </head>
 <body>
-  <header class="header">
-    <img src="src/icons/Telho.svg" alt="telho-logo" width="118" height="38">
-    <nav>
-      <ul class="header-menu">
-        <li>
-          <a href="#formacao">Formação</a>
-        </li>
-        <li>
-          <a href="#experiencia">Experiência</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="introducao">
-    <img src="src/img/perfil-lucas.png" alt="Perfil Lucas" width="345" height="345">
-    <div>
-        <h1>Desenvolvedor <br>
-          Front End & 
-          <br>
-          UI/UX Designer</h1>
-          <p>Localizado em Santa Catarina 🍻</p>
+    <div class="main-wrapper">
+      <header class="header">
+        <nav>
+          <ul class="header-menu">
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#formacao">Formação</a>
+            </li>
+            <li>
+              <a href="#experiencia">Experiência</a>
+            </li>
+            <li>
+              <a href="#projetos">Projetos</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+            <li id="languages">
+              <button><img src="src/icons/united-kingdom-uk-svgrepo-com.svg" alt="" width="28" height="28"></button>
+              <button><img src="src/icons/flag-for-flag-spain-svgrepo-com.svg" alt="" width="28" height="28"></button>
+              <button><img src="src/icons/flag-for-flag-germany-svgrepo-com.svg" alt="" width="28" height="28"></button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+        <main class="introducao">
+            <div class="text-wrapper">
+              <img src="src/icons/Telho.svg" alt="telho-logo" width="160" height="60">
+              <div class="text-box">
+                <span> Desenvolvedor Front End</span>
+                <span>& UI/UX Designer</span>
+              </div>
+              <p>Localizado em Santa Catarina 🍻</p>
+            </div>
+        </main>
     </div>
-  </main>
-  
-  <section class="formacao" id="formacao" aria-label="Formação">
-    <div class="formacao-container">
-      <h2 class="subtitulo">Formação</h2>
-
-      <div>
-        <p class="formacao-texto">
-          Minha mais recente experiência foi o <strong>curso</strong> que fiz na plataforma ORIGAMID em <strong>UI/UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
-        </p>
-
-        <ul class="faculdade-lista">
-          <li class="faculdade">
-            <span class="faculdade-tipo">Bacharel
-            </span>
-              <h3 class="faculdade-curso">Bacharelado em Tecnologia da Informação</h3>
-              <span class="faculdade-instituicao">UNIVESP</span>
-          </li>
-          <li class="faculdade">
-            <span class="faculdade-tipo">Curso Intensivo
-            </span>
-              <h3 class="faculdade-curso">UI/UX Design</h3>
-              <span class="faculdade-instituicao">ORIGAMID</span>
-          </li>
-        </ul>
-
-        <div class="formacao-extra">
-          <div class="cursos">
-            <h3>Cursos Intensivos</h3>
-              <ul>
-                <li>UX Design & UI Design <span>56h</span></li>
-                <li>Front End para Iniciantes <span>72h</span></li>
-              </ul>
-          </div>
-          <div class="idiomas">
-            <h3>Idiomas</h3>
-              <ul>
-                <li>Inglês  <span>/ Fluente</span></li>
-                <li>Espanhol<span>/ Intermediário - B1</span></li>
-                <li>Alemão<span>/ Básico - A2</span></li>
-              </ul>
+    
+    <section class="formacao" id="formacao" aria-label="Formação">
+      <div class="formacao-container">
+        <h2 class="subtitulo">Formação</h2>
+        <div>
+          <p class="formacao-texto">
+            Minha mais recente experiência foi o <strong>curso</strong> que fiz na plataforma ORIGAMID em <strong>UI/UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
+          </p>
+          <ul class="faculdade-lista">
+            <li class="faculdade">
+              <span class="faculdade-tipo">Bacharel
+              </span>
+                <h3 class="faculdade-curso">Bacharelado em Tecnologia da Informação</h3>
+                <span class="faculdade-instituicao">UNIVESP</span>
+            </li>
+            <li class="faculdade">
+              <span class="faculdade-tipo">Curso Intensivo
+              </span>
+                <h3 class="faculdade-curso">UI/UX Design</h3>
+                <span class="faculdade-instituicao">ORIGAMID</span>
+            </li>
+          </ul>
+          <div class="formacao-extra">
+            <div class="cursos">
+              <h3>Cursos Intensivos</h3>
+                <ul>
+                  <li>UX Design & UI Design <span>56h</span></li>
+                  <li>Front End para Iniciantes <span>72h</span></li>
+                </ul>
+            </div>
+            <div class="idiomas">
+              <h3>Idiomas</h3>
+                <ul>
+                  <li>Inglês  <span>/ Fluente</span></li>
+                  <li>Espanhol<span>/ Intermediário - B1</span></li>
+                  <li>Alemão<span>/ Básico - A2</span></li>
+                </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="experiencia" id="experiencia" aria-label="experiencia">
-    <div class="experiencia-container">
-      <h2 class="subtitulo">Experiência</h2>
-      <div>
-        <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft
-          utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>, para
-          aplicativos web como a rede social Dogs, eu
-          trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
-          <div class="empresa">
-            <span class="empresa-ano">2022 - Atual</span>
-            <h3 class="empresa-titulo">EcoPlus Industrial Information</h3>
-            <span class="empresa-titulo">Desenvolvedor Júnior</span>
-            <p class="empresa-texto">Desenvolvo projetos e aplicações para visualização e monitoramento de máquinas em dashboards com HTML, CSS e Javascript.</p>
-            <ul class="empresa-habilidades">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Figma</li>
-              <li>Node-Red</li>
-            </ul>
-          </div>
-          <div class="empresa">
-            <span class="empresa-ano">2022</span>
-            <h3 class="empresa-titulo">T-Brothers Desenvolvimento  & Serviços</h3>
-            <span class="empresa-titulo">Freelancer</span>
-            <p class="empresa-texto">Planejamento e desenvolvimento do site para o Grupo Ellos feito em wordpress com auxílio de CSS.</p>
-            <ul class="empresa-habilidades">
-              <li>Wordpress</li>
-              <li>CSS</li>
-            </ul>
-          </div>
+    </section>
+    <section class="experiencia" id="experiencia" aria-label="experiencia">
+      <div class="experiencia-container">
+        <h2 class="subtitulo">Experiência</h2>
+        <div>
+          <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft
+            utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>, para
+            aplicativos web como a rede social Dogs, eu
+            trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+            <div class="empresa">
+              <span class="empresa-ano">2022 - Atual</span>
+              <h3 class="empresa-titulo">EcoPlus Industrial Information</h3>
+              <span class="empresa-titulo">Desenvolvedor Júnior</span>
+              <p class="empresa-texto">Desenvolvo projetos e aplicações para visualização e monitoramento de máquinas em dashboards com HTML, CSS e Javascript.</p>
+              <ul class="empresa-habilidades">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Figma</li>
+                <li>Node-Red</li>
+              </ul>
+            </div>
+            <div class="empresa">
+              <span class="empresa-ano">2022</span>
+              <h3 class="empresa-titulo">T-Brothers Desenvolvimento  & Serviços</h3>
+              <span class="empresa-titulo">Freelancer</span>
+              <p class="empresa-texto">Planejamento e desenvolvimento do site para o Grupo Ellos feito em wordpress com auxílio de CSS.</p>
+              <ul class="empresa-habilidades">
+                <li>Wordpress</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class="footer-texto">
-        Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa.
-      </p>
-      <ul class="footer-contato">
-        <li>lucas.santos.telho@gmail.com</li>
-        <li>+13 99162-1030</li>
-        <li>
-          <a href="/">@lucas.telho</a>
-        </li>
-      </ul>
-      <p class="footer-copy"><span class="brand">Telho</span>.  Alguns direitos reservados</p>
-    </div>
-  </footer>
+    </section>
+    <footer class="footer" id="contato">
+      <div class="footer-container">
+        <p class="footer-texto">
+          Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa.
+        </p>
+        <ul class="footer-contato">
+          <li>lucas.santos.telho@gmail.com</li>
+          <li>+13 99162-1030</li>
+          <li>
+            <a href="/">@lucas.telho</a>
+          </li>
+        </ul>
+        <p class="footer-copy"><span class="brand">Telho</span>.  Alguns direitos reservados</p>
+      </div>
+    </footer>
 </body>
 </html>
