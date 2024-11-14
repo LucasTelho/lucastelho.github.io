@@ -20,7 +20,9 @@
   --p5: #05173a;
   --font1-s: 400 1rem/1.25 "Fira Sans", sans-serif;
 }
-
+html, body {
+  height: 100%;
+}
 body {
   font-family: "Fira Sans", Arial, sans-serif;
   margin: 0;
