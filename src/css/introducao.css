@@ -47,6 +47,10 @@
   font-size: 2.5rem;
   color: var(--c1);
 }
+.text-box  {
+  display: flex;
+  gap: 1rem;
+}
 
 .text-box span:first-child{
   font-family: 'Courier New', Arial;
@@ -56,7 +60,7 @@
   content: '<';
 }
 .text-box span:first-child::after {
-  content: '/ >';
+  content: '/>';
 }
 
 .text-box span:nth-child(n + 2){
@@ -75,12 +79,13 @@
   .text-box {
     gap: 1rem;
   }
-
+  .text-box span:first-child::after {
+    content: '/>';
+  }
   .text-wrapper {
     padding: 2.5rem;
   }
-
-    .text-box {
+  .text-box {
     display: grid;
     width: 100%;
     gap: 0;
