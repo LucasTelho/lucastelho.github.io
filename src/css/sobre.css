@@ -1,0 +1,100 @@
+.sobre, .sobre section, .skills, aside  {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sobre {
+  padding: 1.25rem 1rem;
+}
+
+.sobre h1 {
+  color: var(--c2);
+  font-size: 1.5rem;
+}
+
+.sobre p, .sobre span {
+  color: var(--c3);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.front-end-skills, .extra-skills {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
+.front-end-skills img, .extra-skills img {
+  width: 1.25rem;
+}
+
+aside, .social-media li {
+  align-items: center;
+}
+
+#img-desktop{
+  width: 85%;
+  border: 4px solid var(--c4);
+  border-radius: 50%;
+}
+
+.social-media {
+  display: grid;
+  gap: .75rem;
+}
+
+.social-media li {
+  display: flex;
+  gap: .25rem;
+}
+
+@media(min-width: 312px) {
+  .sobre {
+    align-items: center;
+  }
+  .sobre h1 {
+    font-size: 2rem;
+  }
+
+  #img-desktop{
+    width: 65%;
+  }
+
+  .front-end-skills img, .extra-skills img {
+    width: 10%;
+    max-width: 2.5rem;
+  }
+}
+
+@media(min-width: 750px) {
+  .sobre {
+    flex-direction: row;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: left;
+    height: 600px;
+  }
+
+  .sobre h1 {
+    font-size: 2.5rem;
+  }
+  .sobre p {
+    max-width: 760px;
+  }
+  
+  .sobre aside {
+    justify-content: center;
+  }
+  #img-desktop {
+    width: 100%;
+  }
+
+  .front-end-skills {
+    justify-content: flex-start;
+  }
+
+  .front-end-skills, .extra-skills {
+    gap: 1.5rem;
+  }
+}

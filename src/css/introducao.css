@@ -1,116 +1,181 @@
-.main-wrapper {
-  position: relative;
-  background: url('../img/bg-main-fixed.png') no-repeat center;
-  background-size: 100% 100%;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 100px 1fr;
-}
-
 .introducao {
-  display: grid;
-  place-self: center;
+  width: 100%;
+  font-size: .75rem;
+  background: url('../img/bg-main-fixed.png') no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.introducao h1 {
-  font-size: 4.5rem;
-  line-height: 1.125;
-  margin-bottom: 30px;
-  position: relative;
-  color: #F4F4F4;
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 70%;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#telho-logo {
+  width: 40%;
 }
 
 .introducao p {
-  color: #CCCCCC;
-}
-.text-wrapper {
-  display: grid;
-  gap: 1.25rem;
-  place-self: end center;
-  place-items: center center;
+  color: var(--c3);
 }
 
-.text-wrapper span {
-  font-size: 2.5rem;
+.text-wrapper {
+  gap: .25rem;
+}
+
+.text-wrapper {
+  text-align: center;
+  place-items: center center;
+  margin-bottom: 0;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
   color: var(--c1);
 }
-.text-box  {
+
+.ux-wrapper{
   display: flex;
-  gap: 1rem;
-}
-.text-box span:first-child{
-  font-family: 'Courier New', Arial;
-  word-spacing: -0.5ch;
-}
-.text-box span:first-child::before {
-  content: '<';
-}
-.text-box span:first-child::after {
-  content: '/>';
+  position: relative;
+  justify-content: center;
 }
 
-.text-box span:nth-child(n + 2){
+.ux-wrapper img {
+  position: absolute;
+  right: 1.5rem;
+  top: -.25rem;
+  width: 15%;
+}
+
+
+#ux-designer{
   font-family: 'Fredericka The Great', 'Courier New', Courier, monospace;
+  z-index: 1;
 }
 
-@media(max-width: 1200px) {
-  .main-wrapper {
-    background-size: cover;
-    background-position: -110px 100%;
+.detail {
+  font-family: 'Imperial Script', 'Courier New', Courier, monospace;
+}
+
+@media(min-width: 312px) {
+  .introducao  {
+    font-size: 1.25rem;
+    gap: 2.5rem;
+    line-height: 1.125;
+    position: relative;
+    color: var(--c2);
+    padding-bottom: 0;
   }
-  .introducao {
-    place-self: center;
-    width: 100%;
+
+  #telho-logo {
+    width: 45%;
   }
-  .text-box span:first-child::after {
-    content: '/>';
-  }
+
   .text-wrapper {
-    padding: 2.5rem;
+    justify-content: space-evenly;
+    height: 100%;
   }
+
+  .text-box span:first-child {
+    font-family: 'Fira Sans', Arial;
+    font-weight: 400;
+  }
+  
+  .detail {
+    font-size: 2.5rem;
+  }
+
   .text-box {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
     gap: 1rem;
   }
-  .text-wrapper p {
+
+  .ux-wrapper img {
+    right: 2.75rem;
+    width: 15%;
+  }
+}
+
+@media(min-width:375px) {
+  .text-box {
     font-size: 1.5rem;
   }
-  .text-wrapper span {
-    font-size: 2.25rem;
-    text-align: center;
-    color: var(--c1);
-  }
-}
+} 
 
-@media(max-width: 600px) {
+@media(min-width: 750px) {
+  #telho-logo {
+    width: 35%;
+  }
+
   .introducao {
-    width: 100%;
+    font-size: 1.5rem;
   }
   .text-box {
-    text-align: center;
-    gap: 1rem;
-    flex-direction: column;
+    font-size: 2rem;
+
   }
-  .text-wrapper span {
-    font-size: 1.75rem;
-  }
-  .text-wrapper p {
-    font-size: 1rem;
+  .ux-wrapper img {
+    position: absolute;
+    right: 3.75rem;
+    top: -.5rem;
   }
 }
 
+@media(min-width: 1200px) {
+  .introducao {
+    background-size: 100% 100%;
+  }
+  .content-wrapper #telho-logo {
+    width: 15%;
+  }
 
-@media(max-width: 359px){
-  .text-wrapper span {
+  .content-wrapper .text-box {
+    flex-direction: row;
+    gap: rem;
+    font-size: 2.75rem;
+  }
+
+  .content-wrapper .detail {
+    font-size: 2.75rem;
+  }
+  .content-wrapper .text-wrapper {
+    gap: 1rem;
+  }
+
+  .content-wrapper .text-wrapper, .introducao {
+    justify-content: flex-end;
+  }
+
+  .content-wrapper {
+    justify-content: unset;
+    gap: 2rem;
+    height: auto !important;
+    margin-bottom: 10%;
+  }
+
+  #location {
     font-size: 1.25rem;
   }
-}
 
-@media(max-width: 200px) {
-  .text-wrapper span{
-    font-size: .75rem;
-  }
-  .introducao img {
-    width: 40%;
+  .ux-wrapper img {
+    position: absolute;
+    right: -2.5rem;
+    width: 25%;
+    top: -.75rem;
   }
 }

@@ -25,14 +25,16 @@ html, body {
 }
 body {
   font-family: "Fira Sans", Arial, sans-serif;
-  margin: 0;
-  color: #141414;
-  background-color: #292929;
+  color: var(--c12);
+  background-color: var(--c11);
 }
 
-h1,h2,h3, p, ul {
+* {
   margin: 0;
   padding: 0;
+}
+
+body, p, ul, ol, li {
   list-style-type: none;
 }
 
@@ -40,6 +42,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -54,6 +60,22 @@ button {
   line-height: 1;
   text-transform: uppercase;
   max-width: 4ch;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@keyframes showIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 800px) {

@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Telho - Desenvolvedor e UX/UI Designer</title>
-  <link rel="stylesheet" href="src/css/style.css">
   <link rel="icon" href="src/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredericka+the+Great&family=Imperial+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <meta name="description" content="Desenvolvedor Front End e UX/UI Designer localizado em Santa Catarina">
+  <script>document.documentElement.classList += ' js';</script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8"></script>
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
-    <div class="main-wrapper">
-      <header class="header">
+  <div class="main-wrapper">
+    <header class="header">
+      <div class="pre-container">
+        <section class="mobile-header">
+          <img id="telho-logo" src="src/icons/Telho.svg" alt="telho-logo" width="160" height="60">
+          <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </section>
         <nav>
           <ul class="header-menu">
             <li>
@@ -31,103 +47,156 @@
             <li>
               <a href="#contato">Contato</a>
             </li>
+            <li id="languages">
+              <button><img src="src/icons/united-kingdom-uk-svgrepo-com.svg" alt="" width="28" height="28"></button>
+              <button><img src="src/icons/flag-for-flag-spain-svgrepo-com.svg" alt="" width="28" height="28"></button>
+              <button><img src="src/icons/flag-for-flag-germany-svgrepo-com.svg" alt="" width="28" height="28"></button>
+            </li>
           </ul>
-          <div id="languages">
-            <button><img src="src/icons/united-kingdom-uk-svgrepo-com.svg" alt="" width="28" height="28"></button>
-            <button><img src="src/icons/flag-for-flag-spain-svgrepo-com.svg" alt="" width="28" height="28"></button>
-            <button><img src="src/icons/flag-for-flag-germany-svgrepo-com.svg" alt="" width="28" height="28"></button>
-          </div>
         </nav>
-      </header>
-        <main class="introducao">
-            <div class="text-wrapper">
-              <img src="src/icons/Telho.svg" alt="telho-logo" width="160" height="60">
-              <div class="text-box">
-                <span> Desenvolvedor</span>
-                <span>&</span>
-                <span> UI/UX Designer</span>
+      </div>
+    </header>
+    <main>
+      <section class="introducao">
+        <div class="content-wrapper">
+          <img id="telho-logo" src="src/icons/Telho.svg" alt="telho-logo" width="160" height="60">
+          <div class="text-wrapper">
+            <div class="text-box">
+              <span id="developer">&lt; / &gt; Desenvolvedor Front End</span>
+              <span class="detail" id="detail">&</span>
+              <div class="ux-wrapper">
+                <span id="ux-designer">UI/UX Designer</span>
+                <img id="mark" src="./src/icons/detalhe-novo.svg" alt="Detalhe marca">
               </div>
-              <p>Localizado em Santa Catarina 🍻</p>
             </div>
-        </main>
-    </div>
-    
-    <!-- TODO: -->
-    <section class="formacao" id="formacao" aria-label="Formação">
-      <div class="formacao-container">
-        <h2 class="subtitulo">Formação</h2>
-        <div>
-          <p class="formacao-texto">
-            Minha mais recente experiência foi o <strong>curso</strong> que fiz na plataforma ORIGAMID em <strong>UI/UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
-          </p>
-          <ul class="faculdade-lista">
-            <li class="faculdade">
-              <span class="faculdade-tipo">Bacharel
-              </span>
-                <h3 class="faculdade-curso">Bacharelado em Tecnologia da Informação</h3>
-                <span class="faculdade-instituicao">UNIVESP</span>
-            </li>
-            <li class="faculdade">
-              <span class="faculdade-tipo">Curso Intensivo
-              </span>
-                <h3 class="faculdade-curso">UI/UX Design</h3>
-                <span class="faculdade-instituicao">ORIGAMID</span>
-            </li>
-          </ul>
-          <div class="formacao-extra">
-            <div class="cursos">
-              <h3>Cursos Intensivos</h3>
-                <ul>
-                  <li>UX Design & UI Design <span>56h</span></li>
-                  <li>Front End para Iniciantes <span>72h</span></li>
-                </ul>
-            </div>
-            <div class="idiomas">
-              <h3>Idiomas</h3>
-                <ul>
-                  <li>Inglês  <span>/ Fluente</span></li>
-                  <li>Espanhol<span>/ Intermediário - B1</span></li>
-                  <li>Alemão<span>/ Básico - A2</span></li>
-                </ul>
-            </div>
+            <p id="location">Localizado em Santa Catarina 🍻</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="experiencia" id="experiencia" aria-label="experiencia">
-      <div class="experiencia-container">
-        <h2 class="subtitulo">Experiência</h2>
-        <div>
-          <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft
-            utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>, para
-            aplicativos web como a rede social Dogs, eu
-            trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
-            <div class="empresa">
-              <span class="empresa-ano">2022 - Atual</span>
-              <h3 class="empresa-titulo">EcoPlus Industrial Information</h3>
-              <span class="empresa-titulo">Desenvolvedor Júnior</span>
-              <p class="empresa-texto">Desenvolvo projetos e aplicações para visualização e monitoramento de máquinas em dashboards com HTML, CSS e Javascript.</p>
-              <ul class="empresa-habilidades">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Figma</li>
-                <li>Node-Red</li>
-              </ul>
+      </section>
+      <article class="sobre">
+        <section>
+          <h1>Sobre</h1>
+          <p>Desenvolvedor Web front-end apaixonado pelo que faz, com forte interesse em UI/UX e a criação de interfaces funcionais, acessíveis, responsivas e organizadas. Sou proativo, comunicativo e atento aos detalhes, gosto de manter o código tão bem estruturado quanto meu ambiente de trabalho. Além da vida profissional, tenho hobbies que incluem astronomia, tocar violão e estudar idiomas — sou fluente em Inglês, possuo nível de Espanhol A2/B1 e atualmente estudando Alemão. Com um irmão gêmeo, valorizo a colaboração e o trabalho em equipe.</p>
+          <section class="skills">
+            <div class="front-end-skills">
+              <img src="src/icons/figma.svg" alt="">
+              <img src="src/icons/git.svg" alt="">
+              <img src="src/icons/html.svg" alt="">
+              <img src="src/icons/css.svg" alt="">
+              <img src="src/icons/javascript.svg" alt="">
+              <img src="src/icons/react.svg" alt="">
+              <img src="src/icons/bootstrap-fill.svg" alt="">
             </div>
-            <div class="empresa">
-              <span class="empresa-ano">2022</span>
-              <h3 class="empresa-titulo">T-Brothers Desenvolvimento  & Serviços</h3>
-              <span class="empresa-titulo">Freelancer</span>
-              <p class="empresa-texto">Planejamento e desenvolvimento do site para o Grupo Ellos feito em wordpress com auxílio de CSS.</p>
-              <ul class="empresa-habilidades">
-                <li>Wordpress</li>
-                <li>CSS</li>
-              </ul>
+            <div class="extra-skills">
+              <img src="src/icons/grafana.svg" alt="">
+              <img src="src/icons/postgre.svg" alt="">
+              <img src="src/icons/node-red.svg" alt="">
             </div>
-        </div>
+          </section>
+        </section>
+        <aside>
+          <img src="src/img/perfil-lucas.png" id="img-desktop" alt="">
+          <ul class="social-media">
+            <li>
+              <img src="src/icons/linkedin.svg" alt="">
+              <span>lucas-telho</span>
+            </li>
+            <li>
+              <img src="src/icons/instagram.svg" alt="">
+              <span>lucas.telho</span>
+            </li>
+            <li>
+              <img src="src/icons/github.svg" alt="">
+              <span>LucasTelho</span>
+            </li>
+          </ul>
+        </aside>
+      </section>
+      </article>
+      
+      <div>
+        <section class="formacao" id="formacao" aria-label="Formação">
+          <div class="formacao-container">
+            <h2 class="subtitulo">Formação</h2>
+            <div>
+              <p class="formacao-texto">
+                Minha mais recente experiência foi o <strong>curso</strong> que fiz na plataforma ORIGAMID em
+                <strong>UI/UX Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
+              </p>
+              <ul class="faculdade-lista">
+                <li class="faculdade">
+                  <span class="faculdade-tipo">Bacharel
+                  </span>
+                  <h3 class="faculdade-curso">Bacharelado em Tecnologia da Informação</h3>
+                  <span class="faculdade-instituicao">UNIVESP</span>
+                </li>
+                <li class="faculdade">
+                  <span class="faculdade-tipo">Curso Intensivo
+                  </span>
+                  <h3 class="faculdade-curso">UI/UX Design</h3>
+                  <span class="faculdade-instituicao">ORIGAMID</span>
+                </li>
+              </ul>
+              <div class="formacao-extra">
+                <div class="cursos">
+                  <h3>Cursos Intensivos</h3>
+                  <ul>
+                    <li>UX Design & UI Design <span>56h</span></li>
+                    <li>Front End para Iniciantes <span>72h</span></li>
+                  </ul>
+                </div>
+                <div class="idiomas">
+                  <h3>Idiomas</h3>
+                  <ul>
+                    <li>Inglês <span>/ Fluente</span></li>
+                    <li>Espanhol<span>/ Intermediário - B1</span></li>
+                    <li>Alemão<span>/ Básico - A2</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+      <div>
+        <section class="experiencia" id="experiencia" aria-label="experiencia">
+          <div class="experiencia-container">
+            <h2 class="subtitulo">Experiência</h2>
+            <div>
+              <p class="experiencia-texto">Desenvolvo pequenos projetos como o Bikcraft
+                utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e <strong>Javascript</strong>, para
+                aplicativos web como a rede social Dogs, eu
+                trabalhei no <strong>UX</strong> e <strong>UI Design</strong> do projeto.</p>
+              <div class="empresa">
+                <span class="empresa-ano">2022 - Atual</span>
+                <h3 class="empresa-titulo">EcoPlus Industrial Information</h3>
+                <span class="empresa-titulo">Desenvolvedor Júnior</span>
+                <p class="empresa-texto">Desenvolvo projetos e aplicações para visualização e monitoramento de máquinas em
+                  dashboards com HTML, CSS e Javascript.</p>
+                <ul class="empresa-habilidades">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Figma</li>
+                  <li>Node-Red</li>
+                </ul>
+              </div>
+              <div class="empresa">
+                <span class="empresa-ano">2022</span>
+                <h3 class="empresa-titulo">T-Brothers Desenvolvimento & Serviços</h3>
+                <span class="empresa-titulo">Freelancer</span>
+                <p class="empresa-texto">Planejamento e desenvolvimento do site para o Grupo Ellos feito em wordpress com
+                  auxílio de CSS.</p>
+                <ul class="empresa-habilidades">
+                  <li>Wordpress</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="footer" id="contato">
       <div class="footer-container">
         <p class="footer-texto">
@@ -140,8 +209,12 @@
             <a href="/">@lucas.telho</a>
           </li>
         </ul>
-        <p class="footer-copy"><span class="brand">Telho</span>.  Alguns direitos reservados</p>
+        <p class="footer-copy"><span class="brand">Telho</span>. Alguns direitos reservados</p>
       </div>
     </footer>
+  </div>
+
+  <script src="./src/js/index.js"></script>
 </body>
+
 </html>
